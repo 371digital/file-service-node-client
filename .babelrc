@@ -1,0 +1,17 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    ["@babel/plugin-transform-runtime"],
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "services": "./source/services",
+          "utils": "./source/utils",
+          "_constants": "./source/constants"
+        }
+      }
+    ]
+  ]
+}
